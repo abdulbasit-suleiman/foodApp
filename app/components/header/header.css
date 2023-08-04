@@ -1,0 +1,56 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+}
+.header-menu{
+    display: flex;
+    gap: 2rem;
+    color:black;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+.header-menu>ul:hover{
+    color: red;
+}
+
+.header-menu{
+    text-decoration: none;
+    color: orange;
+    list-style-type: none;
+}
+.header-menu>li:hover{
+    cursor: pointer;
+    color:red;
+}
+@media screen and (max-width: 780px) {
+    .body{
+        width: fit-content;
+    }
+    header>:nth-child(2){
+        position:fixed;
+        z-index: 999;
+    }
+    .header-menu{
+        flex-direction: column;
+        background: rgb(78, 77, 77);
+        padding: 2rem;
+    }
+    .icon{
+        width: 1.3rem;
+        height: 1.3rem;
+        cursor: pointer;
+    }
+    .nav{
+        width: 2rem;
+        height:1rem;
+        padding-top: 1rem;
+        position:relative;
+    }
+
+}
