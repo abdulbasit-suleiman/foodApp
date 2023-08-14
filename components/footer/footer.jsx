@@ -7,7 +7,7 @@ export function FooterPage(){
          <div>
 
          <span className='stroke-text'>Powered by :</span>
-         <Link href="https://wa.me/08102444444">Foodnotion.com</Link>
+         <Link href="https://wa.me/2348102444444">Foodnotion.com</Link>
 
          </div>
         </div>
