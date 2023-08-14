@@ -1,11 +1,11 @@
+'use client';
 import "./hero.css";
 import Image from "next/image";
 import HeaderPage from "../header/header";
-import Logo from "../../../public/asset/rodo.jpg";
-import Chicken from "../../../public/asset/chicken.jpg";
-import Chicken2 from "../../../public/asset/beans2.jpg";
-import Cripsy from "../../../public/asset/turkey.jpg";
-import kripsy from "../../../public/asset/cripsy.jpg";
+import NumberCounter from 'number-counter';
+
+const cripsy = '/asset/rodo.jpg'
+const kripsy = '/asset/doughnuts.jpg'
 
 const HeroPage = () => {
   return (
@@ -37,11 +37,11 @@ const HeroPage = () => {
 
         <div className="figures">
           <div>
-            <span>+2</span>
+            <span>+5</span>
             <span>senior chefs</span>
           </div>
           <div>
-            <span>+5</span>
+<span><NumberCounter end={140} start={100} delay='4' preFix="+" /></span>
             <span>members joined</span>
           </div>
           <div>
@@ -51,7 +51,6 @@ const HeroPage = () => {
         </div>
         <div className="hero-buttons">
           <button className="btn">Get Started</button>
-
           <button className="btn ">Learn More</button>
         </div>
       </div>
@@ -68,14 +67,14 @@ const HeroPage = () => {
         <div className="calories">
           <Image
             className="calo"
-            src={Cripsy}
+            src={cripsy}
             alt=""
             width={100}
             height={100}
           />
           <div>
             <span>Food Cooked </span>
-            <span>   +220  Still Counting</span>
+            <span>  <NumberCounter end={200} start={2} delay='4' preFix="+" />  Still Counting</span>
           </div>
         </div>
       </div>

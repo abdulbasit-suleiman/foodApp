@@ -94,10 +94,19 @@
   gap: 1rem;
   justify-content: center;
   align-items: center;
+  display: none;
   align-self: center;
+}
+.plans-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
   .plans {
     flex-direction: column;
+  display: none;
+  justify-content: center;
+
   }
   .plan > :nth-child(2) {
     transform: scale(none);

@@ -18,7 +18,7 @@ export function JoinPage() {
           <input
             type="email"
             name="user-email"
-            placeholder="enter rour email"
+            placeholder="Enter your email"
           />
           <button className="join-btn">Join now</button>
         </form>

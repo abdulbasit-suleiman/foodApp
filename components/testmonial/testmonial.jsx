@@ -1,7 +1,7 @@
 "use client";
 import "./testmonial.css";
 import { testmonialData } from "../components-data/testmonial-data";
-import Logo from "../../../public/asset/chicken4.jpg";
+import Logo from "../../public/asset/chicken4.jpg";
 import React, { useState } from "react";
 import Image from "next/image";
 

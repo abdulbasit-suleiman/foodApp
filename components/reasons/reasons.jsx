@@ -1,11 +1,11 @@
 import "./reasons.css";
 import Image from "next/image";
-import Logo from "../../../public/asset/logo.jpg";
-import Rodo from "../../../public/asset/amala1.jpg";
-import Chicken from "../../../public/asset/semo-egusi.jpg";
-import Chicken2 from "../../../public/asset/jollof-chicken3.jpg";
-import Lemon from "../../../public/asset/beans-dodo.jpg";
-import beans from "../../../public/asset/beans2.jpg";
+import Logo from "../../public/asset/logo.jpg";
+import Rodo from "../../public/asset/amala1.jpg";
+import Chicken from "../../public/asset/semo-egusi.jpg";
+import Chicken2 from "../../public/asset/jollof-chicken3.jpg";
+import Lemon from "../../public/asset/beans-dodo.jpg";
+import beans from "../../public/asset/beans2.jpg";
 export function ReasonsPage() {
   return (
     <div id="availiable" className="reasons-page">

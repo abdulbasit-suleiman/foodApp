@@ -41,10 +41,10 @@ body {
 }
 .blur {
   position: absolute;
-  background: rgba(253, 120, 43, 0.69);
+  /* background: rgba(253, 120, 43, 0.69);
   border-radius: 50%;
   z-index: -9;
-  filter: blur(150px);
+  filter: blur(150px); */
 }
 
 

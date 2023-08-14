@@ -1,9 +1,25 @@
+import Link from "next/link";
+import React, { useEffect, useRef } from "react";
+
 function Topmodal({ onClose }){
+  const mobileMenuRef = useRef(null);
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
+        onClose(); 
+      }
+    }
+  
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [onClose]);
+
     return(
-                <div className="mobile-link">
-                    <span className='cancel' onClick={onClose}><p>x</p></span>
+                <div className="mobile-link"  ref={mobileMenuRef}>
         <div>
-        <ul className="header-menu">
+        <ul className="mobile-menu "  style={{listStyleType:'none'}}>
           <li>
             <Link href="#">
               Home
@@ -22,7 +38,7 @@ function Topmodal({ onClose }){
           <li>
             <Link href="/#plans">
               Plans
-            </Link>{" "}
+            </Link>
           </li>
           <li>
             <Link href="/#testmonials">
@@ -30,10 +46,6 @@ function Topmodal({ onClose }){
             </Link>
           </li>
         </ul>
-          <span className="mobile-login">
-          <button className="mobile-in-btn">Sign in</button>
-        <button className="mobile-up-btn">Sign up</button>
-            </span>
           </div>
         </div>
     )

@@ -1,5 +1,5 @@
 import "./plans.css";
-import Logo from "../../../public/asset/logo.jpg";
+import Logo from "../../public/asset/logo.jpg";
 import { plansData } from "../components-data/plans-data";
 import Image from "next/image";
 export const PlansPage = () => {

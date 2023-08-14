@@ -1,6 +1,6 @@
 import React from "react";
 import { programsData } from "../components-data/programs-data";
-import Logo from "../../../public/asset/logo.jpg";
+import Logo from "../../public/asset/logo.jpg";
 import "./programs.css";
 
 const ProgramPage = () => {
