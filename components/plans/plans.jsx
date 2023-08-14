@@ -2,6 +2,7 @@ import "./plans.css";
 import Logo from "../../public/asset/logo.jpg";
 import { plansData } from "../components-data/plans-data";
 import Image from "next/image";
+import Link from "next/link";
 export const PlansPage = () => {
   return (
     <div id="plans" className="plans-container">
@@ -28,7 +29,7 @@ export const PlansPage = () => {
               <div className="benefits">
                 <span>see more benefits</span>
               </div>
-              <button className="bttn">Join now</button>
+              <button className="bttn">      <Link href="https://wa.me/08102444444">Join now</Link></button>
             </div>
           </div>
         ))}

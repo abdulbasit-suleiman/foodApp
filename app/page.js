@@ -10,12 +10,12 @@ import { TestmonialPage } from "@/components/testmonial/testmonial";
   return (
     <div>
       <HeroPage />
-      {/* <ProgramPage />
-      <ReasonsPage /> */}
+      <ProgramPage />
+      <ReasonsPage />
       <PlansPage />
-      {/* <TestmonialPage/>
+      <TestmonialPage/>
       <JoinPage />
-      <FooterPage /> */}
+      <FooterPage />
     </div>
   );
 }
